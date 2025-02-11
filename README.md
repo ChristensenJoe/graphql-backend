@@ -24,19 +24,25 @@ Follow these steps to run the server locally:
 yarn install
 ```
 
-3. Run this to start the PostgreSQL image:
+3. Add this to your .env file
+
+```
+DATABASE_URL="postgresql://test-user:test-password@localhost:5432/mydb?schema=public"
+```
+
+4. Run this to start the PostgreSQL image:
 
 ```
 yarn start-db
 ```
 
-4. Run this to seed the database:
+5. Run this to seed the database:
 
 ```
 yarn seed
 ```
 
-5. Finally, run this to start the server:
+6. Finally, run this to start the server:
 
 ```
 yarn dev
